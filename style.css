@@ -1,34 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #f9f9f9;
+  background: #f3f3f3;
   padding: 50px;
 }
 
 button {
-  padding: 12px 24px;
-  margin: 10px;
+  padding: 15px 30px;
   font-size: 16px;
   background-color: #4CAF50;
-  border: none;
   color: white;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
-}
-
-textarea {
-  width: 80%;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  resize: vertical;
 }
 
 .container {
   background: white;
   padding: 30px;
   border-radius: 12px;
-  max-width: 700px;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
