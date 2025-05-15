@@ -9,10 +9,9 @@
     <h1>Your Interview Feedback</h1>
     <div id="feedback"></div>
   </div>
-
   <script>
     const feedbackDiv = document.getElementById("feedback");
-    const answers = JSON.parse(localStorage.getItem("answers") || "[]");
+    const answers = JSON.parse(localStorage.getItem("answers"));
 
     answers.forEach((qa, index) => {
       const section = document.createElement("div");
@@ -21,8 +20,8 @@
         <p><strong>Your Answer:</strong> ${qa.answer}</p>
         <p><strong>Feedback:</strong> ${
           qa.answer.length < 50 
-            ? "Try to elaborate more." 
-            : "Good detailed response!"}</p><hr>`;
+          ? "Try to elaborate more." 
+          : "Good detailed response!"}</p><hr>`;
       feedbackDiv.appendChild(section);
     });
   </script>
